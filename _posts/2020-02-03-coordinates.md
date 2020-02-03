@@ -15,12 +15,16 @@ But we need to prepare the coordinates DB first.
 - Extract the file `TGNOut_Coordinates.nt`
 - Run this oneliner to just get `longitude` and `latitude`:
 
-    cat TGNOut_Coordinates.nt | sed 's|^<http://vocab.getty.edu/tgn/||' | rg 'latitude|longitude' | sed 's/\^\^.*//' | sed 's|-geometry> <http://schema.org/|,|' | sed 's|> |,|' | sed 's/"//g' > tgn-coordinates.csv
+```shell
+cat TGNOut_Coordinates.nt | sed 's|^<http://vocab.getty.edu/tgn/||' | rg 'latitude|longitude' | sed 's/\^\^.*//' | sed 's|-geometry> <http://schema.org/|,|' | sed 's|> |,|' | sed 's/"//g' > tgn-coordinates.csv
+```
 
 - Copy the resulting file into the python-scripts folder
 - Run the Python script which combines and maps the frequency files from the `extract-from-xml.py` script with
 
-    python combine-and-map-frequencies.py ./tgn-coordinates.csv  frequencies/
+```shell
+python combine-and-map-frequencies.py ./tgn-coordinates.csv  frequencies/
+```
 
 The resulting files are
 
