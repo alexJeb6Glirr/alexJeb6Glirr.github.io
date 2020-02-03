@@ -29,7 +29,7 @@ python combine-and-map-frequencies.py ./tgn-coordinates.csv  frequencies/
 The resulting files are
 
 - [tgn-coordinates.csv.gz](../../assets/tgn-coordinates.csv.gz) (26MB)
-- [the-whole-dispatch-coord-frequency.csv](../../the-whole-dispatch-coord-frequency.csv) (670KB)
+- [the-whole-dispatch-coord-frequency.csv](../../assets/the-whole-dispatch-coord-frequency.csv) (670KB)
 
 ### The code
 
