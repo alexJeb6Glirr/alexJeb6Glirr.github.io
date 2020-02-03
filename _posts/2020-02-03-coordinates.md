@@ -37,5 +37,10 @@ The code can be found at <https://github.com/alexJeb6Glirr/python-scripts>.
 
 ### Screenshots
 
+Mapped coordinates with labels:
+
 ![Mapped coordinates with labels](../../assets/mapped-with-labels.png)
+
+Mapped coordinates to different dot sizes:
+
 ![Mapped coordinates to different dot sizes](../../assets/mapped-to-dot-sizes.png)
